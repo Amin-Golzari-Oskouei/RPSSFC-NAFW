@@ -8,8 +8,8 @@ clear all
 close all
 
 %Load the dataset. The last column of dataset is true labels.
-X=load('letters.mat');
-X=X.letters;
+X=load('iris.mat');
+X=X.iris;
 
 class=X(:,end);
 X(:,end)=[];    %delete last column (true labels) in clustering process
